@@ -1,0 +1,48 @@
+{
+  "capabilities": {
+    "ACCESS_MANAGED": {
+      "label": "アクセス制御",
+      "description": "誰があなたの資産にアクセスし、管理できるかを制御します"
+    },
+    "BOND": {
+      "label": "固定リターン",
+      "description": "満期日と固定リターンを持つ債券を作成します"
+    },
+    "BURNABLE": {
+      "label": "トークンの破棄",
+      "description": "資産保有者が資産を永久に破棄できるようにします"
+    },
+    "CAPPED": {
+      "label": "供給制限",
+      "description": "資産供給の最大限度を設定します"
+    },
+    "COLLATERAL": {
+      "label": "ローン担保",
+      "description": "資産をローンや資金調達の担保として使用します"
+    },
+    "CUSTODIAN": {
+      "label": "安全な保管",
+      "description": "機関レベルの保管機能を有効にします"
+    },
+    "FUND": {
+      "label": "ファンド管理",
+      "description": "組み込みの手数料構造を持つ投資ファンドを管理します"
+    },
+    "HISTORICAL_BALANCES": {
+      "label": "完全な履歴",
+      "description": "完全な取引履歴と残高を追跡します"
+    },
+    "PAUSABLE": {
+      "label": "緊急停止",
+      "description": "緊急時のために資産の移転を一時的に停止します"
+    },
+    "REDEEMABLE": {
+      "label": "現金化",
+      "description": "資産を基礎的な価値に交換できるようにします"
+    },
+    "YIELD": {
+      "label": "リターンを得る",
+      "description": "自動的なリターンと利息の支払いを生成します"
+    }
+  }
+}

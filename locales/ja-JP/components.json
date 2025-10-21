@@ -1,0 +1,65 @@
+{
+  "expressionBuilder": {
+    "title": "エクスプレッションビルダー",
+    "topics": {
+      "kyc": "KYC",
+      "aml": "AML",
+      "collateral": "担保",
+      "isin": "ISIN",
+      "assetClassification": "資産分類",
+      "basePrice": "基準価格"
+    },
+    "topicInput": {
+      "selectPlaceholder": "トピックを選択",
+      "notLabel": "NOT",
+      "addButton": "追加",
+      "orStartGroup": "グループを開始",
+      "startGroupButton": "グループを開始"
+    },
+    "operatorInput": {
+      "chooseOperatorLabel": "オペレーターを選択",
+      "andButton": "AND",
+      "orButton": "OR",
+      "endGroupButton": "グループを終了",
+      "openGroupsText": "{{count}} のオープングループ{{plural}}を閉じる"
+    },
+    "display": {
+      "clearAllButton": "すべてクリア",
+      "validExpression": "エクスプレッションは完了し、有効です",
+      "closeGroupsPrompt": "{{count}} のグループ{{plural}}を閉じて完了します",
+      "addTopicPrompt": "トピックを追加するか、グループを開始してください",
+      "unknownNode": "UNKNOWN"
+    }
+  },
+  "kycForm": {
+    "country": "居住国",
+    "dob": "生年月日",
+    "firstName": "名",
+    "lastName": "姓",
+    "nationalId": "国民ID",
+    "residencyStatus": "居住状況",
+    "residencyStatusOptions": {
+      "dual_resident": "二重居住者 - 私は複数の国において法的/税務上の居住者です",
+      "non_resident": "非居住者 - 私は上記の国に住んでいないか、居住者とは見なされていません",
+      "resident": "単独居住者 - 私は上記の国にのみ住んでおり、法的/税務上の居住者です",
+      "unknown": "言いたくない"
+    },
+    "submit": "保存して続行",
+    "identity": {
+      "confirm-description": "オンチェーンIDを作成するために、あなたの身元を確認してください。",
+      "confirm-title": "ID作成を確認",
+      "deployed-toast": "IDが正常に登録されました！",
+      "deploying-toast": "IDを登録中...",
+      "failed-toast": "IDの登録に失敗しました: "
+    }
+  },
+  "verificationDialog": {
+    "authenticatorCode": "認証コード",
+    "cancel": "キャンセル",
+    "codeLengthError": "コードは6桁でなければなりません",
+    "confirm": "確認",
+    "pinCode": "PINコード",
+    "useAuthenticatorInstead": "代わりに認証アプリを使用",
+    "usePinInstead": "代わりにPINコードを使用"
+  }
+}

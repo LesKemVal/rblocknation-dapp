@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rblocknation.com/sitemap.xml

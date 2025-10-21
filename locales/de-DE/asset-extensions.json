@@ -1,0 +1,48 @@
+{
+  "capabilities": {
+    "ACCESS_MANAGED": {
+      "label": "Zugangskontrolle",
+      "description": "Steuern Sie, wer auf Ihre Vermögenswerte zugreifen und diese verwalten kann"
+    },
+    "BOND": {
+      "label": "Feste Renditen",
+      "description": "Erstellen Sie Anleihen mit Fälligkeitsterminen und festen Renditen"
+    },
+    "BURNABLE": {
+      "label": "Token zerstören",
+      "description": "Ermöglichen Sie Vermögensinhabern, Vermögenswerte dauerhaft zu zerstören"
+    },
+    "CAPPED": {
+      "label": "Versorgungsgrenze",
+      "description": "Setzen Sie eine maximale Grenze für das Angebot an Vermögenswerten"
+    },
+    "COLLATERAL": {
+      "label": "Darlehenssicherheit",
+      "description": "Verwenden Sie Vermögenswerte als Sicherheiten für Kredite und Finanzierungen"
+    },
+    "CUSTODIAN": {
+      "label": "Sichere Verwahrung",
+      "description": "Aktivieren Sie institutionelle Verwahrungsfunktionen"
+    },
+    "FUND": {
+      "label": "Fondsverwaltung",
+      "description": "Verwalten Sie Investmentfonds mit integrierten Gebührenstrukturen"
+    },
+    "HISTORICAL_BALANCES": {
+      "label": "Vollständige Historie",
+      "description": "Verfolgen Sie die vollständige Transaktionshistorie und Salden"
+    },
+    "PAUSABLE": {
+      "label": "Notstopp",
+      "description": "Unterbrechen Sie vorübergehend Vermögensübertragungen für Notfälle"
+    },
+    "REDEEMABLE": {
+      "label": "Bargeld abheben",
+      "description": "Ermöglichen Sie den Austausch von Vermögenswerten gegen den zugrunde liegenden Wert"
+    },
+    "YIELD": {
+      "label": "Renditen erzielen",
+      "description": "Generieren Sie automatische Renditen und Zinszahlungen"
+    }
+  }
+}

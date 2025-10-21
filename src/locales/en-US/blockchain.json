@@ -1,0 +1,9 @@
+{
+  "network": "Network",
+  "walletConnected": "Wallet connected",
+  "walletDisconnected": "Wallet disconnected",
+  "transactionSubmitted": "Transaction submitted",
+  "transactionConfirmed": "Transaction confirmed",
+  "viewOnExplorer": "View on Block Explorer"
+}
+

@@ -1,0 +1,84 @@
+{
+  "expressionBuilder": {
+    "title": "Expression Builder",
+    "topics": {
+      "knowYourCustomer": "Know Your Customer",
+      "antiMoneyLaundering": "Anti-Money Laundering",
+      "qualifiedInstitutionalInvestor": "Qualified Institutional Investor",
+      "professionalInvestor": "Professional Investor",
+      "accreditedInvestor": "Accredited Investor",
+      "accreditedInvestorVerified": "Accredited Investor Verified",
+      "regulationS": "Regulation S",
+      "issuerProspectusFiled": "Prospectus Filed",
+      "issuerProspectusExempt": "Prospectus Exempt",
+      "issuerLicensed": "Issuer Licensed",
+      "issuerReportingCompliant": "Issuer Reporting Compliant",
+      "issuerJurisdiction": "Issuer Jurisdiction",
+      "collateral": "Collateral",
+      "isin": "ISIN",
+      "assetClassification": "Asset Classification",
+      "basePrice": "Base Price",
+      "assetIssuer": "Asset Issuer",
+      "contractIdentity": "Contract Identity"
+    },
+    "topicInput": {
+      "selectPlaceholder": "Select a topic",
+      "notLabel": "NOT",
+      "addButton": "Add",
+      "orStartGroup": "Or start a group",
+      "startGroupButton": "Start group"
+    },
+    "operatorInput": {
+      "chooseOperatorLabel": "Choose operator",
+      "andButton": "AND",
+      "orButton": "OR",
+      "endGroupButton": "End group",
+      "openGroupsText": "{{count}} open group{{plural}} to close"
+    },
+    "display": {
+      "clearAllButton": "Clear all",
+      "validExpression": "Expression is complete and valid",
+      "closeGroupsPrompt": "Close {{count}} group{{plural}} to complete",
+      "addTopicPrompt": "Add a topic or start a group",
+      "unknownNode": "UNKNOWN"
+    }
+  },
+  "kycForm": {
+    "country": "Country of residence",
+    "dob": "Date of birth",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "nationalId": "National ID",
+    "residencyStatus": "Residency status",
+    "residencyStatusOptions": {
+      "dual_resident": "Dual resident - I am legally/tax resident in more than one country",
+      "non_resident": "Non-resident - I do not live in or am not considered a resident of the country above",
+      "resident": "Sole resident - I live in and am legally/tax resident only in the country above",
+      "unknown": "Prefer not to say"
+    },
+    "submit": "Save and continue",
+    "identity": {
+      "confirm-description": "Please verify your identity to create your on-chain identity.",
+      "confirm-title": "Confirm identity creation",
+      "deployed-toast": "Identity registered successfully!",
+      "deploying-toast": "Registering identity...",
+      "failed-toast": "Failed to register identity: "
+    }
+  },
+  "verificationDialog": {
+    "authenticatorCode": "Authenticator Code",
+    "cancel": "Cancel",
+    "codeLengthError": "Code must be 6 digits",
+    "confirm": "Confirm",
+    "pinCode": "PIN Code",
+    "useAuthenticatorInstead": "Use Authenticator App instead",
+    "usePinInstead": "Use PIN Code instead"
+  },
+  "changeRolesSheet": {
+    "title": "Change roles",
+    "description": "Assign or remove roles for this address",
+    "cta": "Change roles",
+    "accountLabel": "Account",
+    "rolesLabel": "Roles"
+  }
+}

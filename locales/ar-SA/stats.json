@@ -1,0 +1,135 @@
+{
+  "charts": {
+    "assetActivity": {
+      "title": "نشاط الأصول",
+      "description": "تتبع أحداث التحويل والسك والحرق",
+      "transferEventsLabel": "التحويلات",
+      "mintEventsLabel": "السك",
+      "burnEventsLabel": "الحرق",
+      "empty": {
+        "title": "لا يوجد نشاط بعد",
+        "description": "سيظهر نشاط الأصول هنا بمجرد حدوث تحويلات أو عمليات سك أو حرق"
+      }
+    },
+    "assetSupply": {
+      "description": "إجمالي عرض الأصول على مر الزمن",
+      "title": "عرض الأصول"
+    },
+    "assetValue": {
+      "description": "توزيع القيمة الإجمالية حسب نوع الأصل",
+      "title": "توزيع قيمة الأصول"
+    },
+    "assetLifecycle": {
+      "title": "إطلاق الأصول مقابل تصميمها",
+      "description": "تتبع كيف تواكب عمليات إطلاق الأصول الإنشاءات الجديدة",
+      "createdLabel": "الأصول التي تم تصميمها",
+      "launchedLabel": "الأصول التي تم إطلاقها",
+      "empty": {
+        "title": "لا توجد بيانات دورة حياة بعد",
+        "description": "ستظهر اتجاهات تصميم وإطلاق الأصول هنا عند بدء تصميم أصول جديدة"
+      }
+    },
+    "totalCollateral": {
+      "label": "إجمالي الضمانات"
+    },
+    "totalSupply": {
+      "description": "إجمالي عرض الأصول خلال آخر {{days}} يومًا",
+      "label": "إجمالي العرض",
+      "title": "تاريخ عرض الرموز"
+    },
+    "supplyChanges": {
+      "description": "الأصول التي تم سكها وحرقها خلال آخر {{days}} يومًا",
+      "title": "تغييرات العرض",
+      "minted": "تم السك",
+      "burned": "تم الحرق"
+    },
+    "transactionHistory": {
+      "description": "حجم المعاملات على مر الزمن",
+      "title": "تاريخ المعاملات"
+    },
+    "userGrowth": {
+      "description": "عدد المستخدمين على مر الزمن",
+      "title": "نمو المستخدمين"
+    },
+    "common": {
+      "noData": "لا توجد بيانات متاحة",
+      "noDataDescription": "لا توجد بيانات حالياً لعرضها في هذا الرسم البياني"
+    },
+    "totalVolume": {
+      "description": "إجمالي حجم المعاملات خلال آخر {{days}} يومًا",
+      "label": "إجمالي الحجم",
+      "title": "حجم المعاملات"
+    },
+    "walletDistribution": {
+      "title": "توزيع المحفظة",
+      "description": "عدد الحائزين مقابل الكميات التي يمتلكونها",
+      "holders": "عدد المحافظ"
+    },
+    "bondStatus": {
+      "title": "حالة السندات",
+      "notBond": "هذه الأصول ليست سندًا",
+      "notAvailable": "حالة السندات غير متاحة",
+      "completed": "مكتمل",
+      "remaining": "متبقي",
+      "issuing": {
+        "title": "إصدار السندات",
+        "description": "{{percentage}}% من السندات قد تم إصدارها",
+        "label": "جارٍ الإصدار"
+      },
+      "active": {
+        "title": "تغطية الاسترداد",
+        "description": "{{percentage}}% من الأصول ذات الفئة المتاحة",
+        "label": "نشط"
+      },
+      "matured": {
+        "title": "استرداد السندات",
+        "description": "{{percentage}}% من السندات قد تم استردادها",
+        "label": "استحق"
+      }
+    },
+    "collateralRatio": {
+      "title": "نسبة الضمانات",
+      "description": "تفصيل الضمانات المتاحة مقابل المستخدمة",
+      "available": "الضمانات المتاحة",
+      "used": "الضمانات المستخدمة",
+      "ratio": "الضمان: {{ratio}}%"
+    },
+    "portfolioValue": {
+      "title": "قيمة محفظتك",
+      "description": "شاهد كيف تغيرت قيمة محفظتك مع مرور الوقت",
+      "label": "القيمة",
+      "empty": {
+        "title": "لا توجد بيانات للعرض بعد",
+        "description": "ابدأ الاستثمار لمشاهدة أداء محفظتك مع مرور الوقت"
+      }
+    }
+  },
+  "title": "الإحصائيات",
+  "widgets": {
+    "assets": {
+      "empty": "لا توجد أصول بعد",
+      "title": "إجمالي الأصول"
+    },
+    "pendingLaunches": {
+      "description": "تم إنشاء {{created}}، تم إطلاق {{launched}}",
+      "title": "الإطلاقات المعلقة"
+    },
+    "common": {
+      "error": "خطأ في تحميل البيانات",
+      "loading": "جارٍ التحميل...",
+      "retry": "إعادة المحاولة"
+    },
+    "transactions": {
+      "description": "{{count}} معاملات في آخر {{days}} يومًا",
+      "title": "إجمالي المعاملات"
+    },
+    "users": {
+      "description": "{{count}} مستخدمين نشطين في آخر {{days}} يومًا",
+      "title": "المستخدمون النشطون"
+    },
+    "value": {
+      "description": "القيمة المجمعة لجميع الأصول",
+      "title": "إجمالي القيمة"
+    }
+  }
+}

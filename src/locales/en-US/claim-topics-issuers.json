@@ -1,0 +1,10 @@
+{
+  "issuer": "Issuer",
+  "claimTopic": "Claim Topic",
+  "createIssuer": "Create Issuer",
+  "editIssuer": "Edit Issuer",
+  "deleteIssuer": "Delete Issuer",
+  "noIssuers": "No issuers found",
+  "issuerDetails": "Issuer Details"
+}
+

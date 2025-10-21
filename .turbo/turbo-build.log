@@ -1,0 +1,6 @@
+
+[36mvite v5.4.20 [32mbuilding for production...[36m[39m
+[2K[1Gtransforming (1) [2mindex.html[22m[2K[1Gtransforming (42) [2m../../node_modules/react/jsx-runtime.js[2K[1Gtransforming (52) [2m../../node_modules/@tanstack/router-cor[2K[1Gtransforming (99) [2m../../node_modules/@tanstack/router-cor[2K[1G[2K[1G[32m✓[39m 119 modules transformed.
+[2K[1Grendering chunks (1)...[2K[1G[2K[1Gcomputing gzip size (0)...[2K[1Gcomputing gzip size (1)...[2K[1Gcomputing gzip size (2)...[2K[1G[2mdist/[22m[32mindex.html                [39m[1m[2m  0.32 kB[22m[1m[22m[2m │ gzip:  0.24 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-Dm8DhR7s.js  [39m[1m[2m279.05 kB[22m[1m[22m[2m │ gzip: 86.97 kB[22m
+[32m✓ built in 1.13s[39m

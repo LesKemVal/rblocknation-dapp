@@ -1,0 +1,65 @@
+{
+  "expressionBuilder": {
+    "title": "منشئ التعبيرات",
+    "topics": {
+      "kyc": "اعرف عميلك",
+      "aml": "مكافحة غسل الأموال",
+      "collateral": "ضمانات",
+      "isin": "رقم التعريف الدولي للأوراق المالية",
+      "assetClassification": "تصنيف الأصول",
+      "basePrice": "سعر الأساس"
+    },
+    "topicInput": {
+      "selectPlaceholder": "اختر موضوعًا",
+      "notLabel": "ليس",
+      "addButton": "أضف",
+      "orStartGroup": "أو ابدأ مجموعة",
+      "startGroupButton": "ابدأ مجموعة"
+    },
+    "operatorInput": {
+      "chooseOperatorLabel": "اختر مشغل",
+      "andButton": "و",
+      "orButton": "أو",
+      "endGroupButton": "انتهت المجموعة",
+      "openGroupsText": "{{count}} مجموعة مفتوحة{{plural}} للإغلاق"
+    },
+    "display": {
+      "clearAllButton": "مسح الكل",
+      "validExpression": "التعبير مكتمل وصحيح",
+      "closeGroupsPrompt": "أغلق {{count}} مجموعة{{plural}} لإكمال",
+      "addTopicPrompt": "أضف موضوعًا أو ابدأ مجموعة",
+      "unknownNode": "غير معروف"
+    }
+  },
+  "kycForm": {
+    "country": "بلد الإقامة",
+    "dob": "تاريخ الميلاد",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "nationalId": "رقم الهوية الوطنية",
+    "residencyStatus": "حالة الإقامة",
+    "residencyStatusOptions": {
+      "dual_resident": "مقيم مزدوج - أنا مقيم قانونيًا/ضريبيًا في أكثر من دولة واحدة",
+      "non_resident": "غير مقيم - لا أعيش في أو لا أعتبر مقيمًا في الدولة المذكورة أعلاه",
+      "resident": "مقيم وحيد - أعيش وأعتبر مقيمًا قانونيًا/ضريبيًا فقط في الدولة المذكورة أعلاه",
+      "unknown": "أفضل عدم القول"
+    },
+    "submit": "احفظ واستمر",
+    "identity": {
+      "confirm-description": "يرجى التحقق من هويتك لإنشاء هويتك على السلسلة.",
+      "confirm-title": "تأكيد إنشاء الهوية",
+      "deployed-toast": "تم تسجيل الهوية بنجاح!",
+      "deploying-toast": "جارٍ تسجيل الهوية...",
+      "failed-toast": "فشل تسجيل الهوية: "
+    }
+  },
+  "verificationDialog": {
+    "authenticatorCode": "رمز المصادقة",
+    "cancel": "إلغاء",
+    "codeLengthError": "يجب أن يكون الرمز مكونًا من 6 أرقام",
+    "confirm": "تأكيد",
+    "pinCode": "رمز التعريف الشخصي",
+    "useAuthenticatorInstead": "استخدم تطبيق المصادقة بدلاً من ذلك",
+    "usePinInstead": "استخدم رمز التعريف الشخصي بدلاً من ذلك"
+  }
+}

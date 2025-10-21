@@ -1,0 +1,206 @@
+{
+  "actions": {
+    "createWallet": {
+      "success": "Wallet has been successfully created"
+    }
+  },
+  "kyc": {
+    "actions": {
+      "delete": {
+        "success": "KYC profile has been successfully deleted"
+      },
+      "upsert": {
+        "success": "KYC profile has been successfully updated"
+      }
+    }
+  },
+  "management": {
+    "page": {
+      "description": "Manage users, roles, and permissions for your platform."
+    },
+    "table": {
+      "columns": {
+        "name": "Name",
+        "email": "Email",
+        "wallet": "Wallet",
+        "role": "Role",
+        "identity": "Identity",
+        "status": "Status",
+        "created": "Created",
+        "lastActive": "Last Active",
+        "actions": "Actions"
+      },
+      "status": {
+        "registered": "Registered",
+        "pending": "Pending",
+        "notConnected": "Not Connected",
+        "identityNeeded": "Identity needed",
+        "notRegistered": "Not Registered",
+        "pendingRegistration": "Pending registration",
+        "admin": "Admin",
+        "adminAriaLabel": "User has any admin role in the system",
+        "registeredAriaLabel": "User is registered and verified on-chain",
+        "notRegisteredAriaLabel": "User is not registered on-chain",
+        "pendingAriaLabel": "User has connected wallet but is not yet registered on-chain",
+        "notConnectedAriaLabel": "User has not connected a wallet",
+        "identityNeededAriaLabel": "User has wallet but no identity registered",
+        "pendingRegistrationAriaLabel": "User identity registration is pending"
+      },
+      "identity": {
+        "none": "No identity"
+      },
+      "actions": {
+        "viewDetails": "View Details",
+        "menu": "Actions menu",
+        "openMenu": "Open actions menu"
+      },
+      "search": {
+        "placeholder": "Search by name, email, or wallet..."
+      },
+      "noWallet": "No wallet",
+      "emptyState": {
+        "title": "No users found",
+        "description": "No users have been registered yet.",
+        "loading": "Loading users..."
+      },
+      "errors": {
+        "loadFailed": "Failed to load users. Please try again.",
+        "navigationFailed": "Failed to navigate to user details"
+      },
+      "fallback": {
+        "never": "Never"
+      }
+    }
+  },
+  "permissions": {
+    "groups": {
+      "compliance": "Compliance",
+      "identity-management": "Identity Management",
+      "assets-management": "Assets Management",
+      "system-administration": "System Administration",
+      "other": "Other"
+    },
+    "table": {
+      "columns": {
+        "name": "Name",
+        "role": "Roles"
+      },
+      "errors": {
+        "navigationFailed": "Failed to navigate to user details",
+        "loadFailed": "Failed to load users. Please try again."
+      },
+      "search": {
+        "placeholder": "Search by wallet address..."
+      },
+      "emptyState": {
+        "title": "No users found",
+        "description": "No users have been registered yet.",
+        "loading": "Loading users..."
+      },
+      "actions": {
+        "changeRoles": "Change roles"
+      }
+    }
+  },
+  "tabs": {
+    "details": "Details",
+    "claims": "Claims"
+  },
+  "fields": {
+    "fullName": "Full Name",
+    "fullNameInfo": "User's display name",
+    "email": "Email",
+    "emailInfo": "User's email address",
+    "role": "Role",
+    "roleInfo": "User's system role",
+    "accountCreated": "Account Created",
+    "accountCreatedInfo": "When the user account was created",
+    "lastLogin": "Last Login",
+    "lastLoginInfo": "Most recent login time",
+    "neverLoggedIn": "Never logged in",
+    "walletAddress": "Wallet Address",
+    "walletAddressInfo": "User's connected wallet address",
+    "noWalletConnected": "No wallet connected",
+    "onChainIdentity": "On-chain Identity",
+    "onChainIdentityInfo": "User's on-chain identity contract",
+    "noIdentityRegistered": "No identity registered",
+    "firstName": "First Name",
+    "firstNameInfo": "Legal first name",
+    "lastName": "Last Name",
+    "lastNameInfo": "Legal last name"
+  },
+  "details": {
+    "kycInformation": "Information"
+  },
+  "profile": {
+    "title": "Profile",
+    "description": "View and manage your profile information.",
+    "manage": "Manage Profile",
+    "email": {
+      "change-disabled": "Email changes are disabled in this environment.",
+      "current": "Current email"
+    },
+    "messages": {
+      "genericError": "Something went wrong. Please try again."
+    },
+    "kyc": {
+      "cardDescription": "Manage your personal information.",
+      "actions": {
+        "success": "Your information has been successfully updated."
+      },
+      "fields": {
+        "firstName": "First name",
+        "lastName": "Last name",
+        "dob": "Date of birth",
+        "country": "Country of residence",
+        "residencyStatus": "Residency status",
+        "nationalId": "National ID"
+      },
+      "residencyStatusOptions": {
+        "resident": "Sole resident - I live in and am legally/tax resident only in the country above",
+        "non_resident": "Non-resident - I do not live in or am not considered a resident of the country above",
+        "dual_resident": "Dual resident - I am legally/tax resident in more than one country",
+        "unknown": "Prefer not to say"
+      }
+    },
+    "editKyc": {
+      "title": "Edit information",
+      "description": "Edit your information."
+    },
+    "changePassword": {
+      "title": "Change Password",
+      "description": "Update your account password for security.",
+      "success": "Your password has been successfully changed.",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm Password",
+      "revokeOtherSessions": "Sign out other devices",
+      "revokeOtherSessionsDescription": "This will sign you out of all other devices and browsers."
+    }
+  },
+  "wallet": {
+    "title": "Wallet",
+    "description": "Manage your wallet address and security settings.",
+    "userWallet": "User Wallet",
+    "userWalletDescription": "Your wallet address and QR code for receiving payments.",
+    "qrCode": "QR Code",
+    "verificationFactors": "Verification Factors",
+    "verificationFactorsDescription": "Security methods enabled for your wallet.",
+    "recoveryCodesCard": "Recovery Codes",
+    "recoveryCodesDescription": "Backup codes for account recovery when other verification methods are unavailable.",
+    "passwordPromptTitle": "Confirm password",
+    "passwordPromptDescription": "Enter your password to generate new recovery codes.",
+    "passwordLabel": "Password",
+    "passwordRequired": "Password is required",
+    "pinCodeEnabled": "PIN Code",
+    "otpEnabled": "OTP",
+    "recoveryCodesEnabled": "Recovery Codes",
+    "regenerateRecoveryCodes": "Regenerate Recovery Codes",
+    "downloadRecoveryCodes": "Download Recovery Codes",
+    "copyAllRecoveryCodes": "Copy All",
+    "confirmRecoveryCodesStored": "I have stored these recovery codes in a safe place",
+    "noVerificationMethods": "No verification methods enabled",
+    "enabled": "Enabled",
+    "disabled": "Disabled"
+  }
+}

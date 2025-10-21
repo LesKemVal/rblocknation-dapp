@@ -1,0 +1,191 @@
+{
+  "charts": {
+    "common": {
+      "noData": "No data available",
+      "noDataDescription": "There is currently no data to display for this chart",
+      "intervalLabel": {
+        "hour": "Hourly",
+        "day": "Daily"
+      },
+      "range": {
+        "duration": "over the last {{duration}}",
+        "window": "from {{start}} to {{end}}"
+      },
+      "units": {
+        "hour_one": "{{count}} hour",
+        "hour_other": "{{count}} hours",
+        "day_one": "{{count}} day",
+        "day_other": "{{count}} days"
+      }
+    },
+    "assetActivity": {
+      "title": "Asset activity",
+      "description": "Track transfer, mint, and burn events",
+      "transferEventsLabel": "Transfers",
+      "mintEventsLabel": "Mints",
+      "burnEventsLabel": "Burns",
+      "empty": {
+        "title": "No activity yet",
+        "description": "Asset activity will appear here once transfers, mints, or burns occur"
+      }
+    },
+    "assetSupply": {
+      "description": "Total supply of assets over time",
+      "title": "Asset supply"
+    },
+    "assetValue": {
+      "description": "Total value breakdown by asset type",
+      "title": "Asset value distribution"
+    },
+    "assetLifecycle": {
+      "title": "Launched assets",
+      "description": "Track how asset launches keep pace with new creations",
+      "createdLabel": "Assets created",
+      "launchedLabel": "Assets launched",
+      "empty": {
+        "title": "No asset trends yet",
+        "description": "You'll see these trends once assets are created"
+      }
+    },
+    "identityGrowth": {
+      "title": "Identity growth",
+      "description": "Watch verified identities grow {{overRange}}",
+      "label": "Active registrations",
+      "empty": {
+        "title": "No registrations yet",
+        "description": "Identity registrations will appear here once identities are registered"
+      }
+    },
+    "totalCollateral": {
+      "label": "Total Collateral"
+    },
+    "totalSupply": {
+      "description": "Total asset supply over the last {{days}} days",
+      "label": "Total supply",
+      "title": "Token supply history"
+    },
+    "totalVolume": {
+      "description": "Total transaction volume over the last {{days}} days",
+      "label": "Total volume",
+      "title": "Transaction volume"
+    },
+    "supplyChanges": {
+      "description": "Minted and burned assets over the last {{days}} days",
+      "title": "Supply changes",
+      "minted": "Minted",
+      "burned": "Burned"
+    },
+    "transactionHistory": {
+      "description": "Transaction volume over time",
+      "title": "Transaction history"
+    },
+    "userGrowth": {
+      "description": "Number of users over time",
+      "title": "User growth"
+    },
+    "walletDistribution": {
+      "title": "Wallet distribution",
+      "description": "Amount of holders vs the amounts they hold",
+      "holders": "Number of Wallets"
+    },
+    "bondStatus": {
+      "title": "Bond Status",
+      "notBond": "This asset is not a bond",
+      "notAvailable": "Bond status not available",
+      "completed": "Completed",
+      "remaining": "Remaining",
+      "issuing": {
+        "title": "Bond Issuance",
+        "description": "{{percentage}}% of bonds have been issued",
+        "label": "Issuing"
+      },
+      "active": {
+        "title": "Redemption Coverage",
+        "description": "{{percentage}}% of denomination assets available",
+        "label": "Active"
+      },
+      "matured": {
+        "title": "Bond Redemption",
+        "description": "{{percentage}}% of bonds have been redeemed",
+        "label": "Matured"
+      }
+    },
+    "collateralRatio": {
+      "title": "Collateral ratio",
+      "description": "Breakdown of available vs used collateral",
+      "available": "Available collateral",
+      "used": "Used collateral",
+      "ratio": "Collateralization: {{ratio}}%"
+    },
+    "portfolioValue": {
+      "title": "Portfolio value",
+      "description": "See how your portfolio value changed over time",
+      "label": "Value",
+      "empty": {
+        "title": "No data to show yet",
+        "description": "You'll see your portfolio value here once you receive your first assets"
+      }
+    },
+    "portfolio": {
+      "summary": {
+        "title": "Portfolio Summary",
+        "description": "View your total portfolio value and holdings",
+        "totalValue": "Total Value",
+        "assetFactories": "Asset Types",
+        "totalAssets": "Total Assets"
+      },
+      "breakdown": {
+        "title": "Portfolio Breakdown",
+        "description": "Detailed breakdown of your assets by type",
+        "chartTitle": "Asset allocation",
+        "chartDescription": "See how your holdings split by asset type",
+        "detailsTitle": "Allocation Details",
+        "assetType": "Asset Type",
+        "factory": "Factory",
+        "value": "Value",
+        "percentage": "Percentage",
+        "assets": "Assets"
+      },
+      "empty": {
+        "summary": "Your portfolio summary will appear here when you receive assets",
+        "breakdown": "Your asset breakdown will appear here when you receive assets"
+      }
+    },
+    "yieldDistribution": {
+      "title": "Yield Distribution",
+      "description": "Total yield generated and claimed over time",
+      "totalYield": "Total Yield",
+      "claimed": "Claimed",
+      "noData": "No yield distribution data available",
+      "error": "Error loading yield distribution data"
+    }
+  },
+  "title": "Statistics",
+  "widgets": {
+    "assets": {
+      "empty": "No assets yet",
+      "title": "Total assets"
+    },
+    "pendingLaunches": {
+      "description": "Created {{created}}, launched {{launched}}",
+      "title": "Pending launches"
+    },
+    "common": {
+      "error": "Error loading data",
+      "loading": "Loading...",
+      "retry": "Retry"
+    },
+    "transactions": {
+      "description": "{{count}} transactions in the last {{days}} days",
+      "title": "Total transactions"
+    },
+    "users": {
+      "description": "{{count}} active users in the last {{days}} days",
+      "title": "Active users"
+    },
+    "value": {
+      "description": "Combined value of all assets",
+      "title": "Total value"
+    }
+  }
+}

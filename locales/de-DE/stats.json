@@ -1,0 +1,139 @@
+{
+  "charts": {
+    "assetActivity": {
+      "title": "Vermögensaktivitäten",
+      "description": "Verfolgen Sie Transfer-, Präge- und Vernichtungsereignisse",
+      "transferEventsLabel": "Übertragungen",
+      "mintEventsLabel": "Prägungen",
+      "burnEventsLabel": "Vernichtungen",
+      "empty": {
+        "title": "Noch keine Aktivitäten",
+        "description": "Vermögensaktivitäten erscheinen hier, sobald Übertragungen, Prägungen oder Vernichtungen stattfinden"
+      }
+    },
+    "assetSupply": {
+      "description": "Gesamtangebot an Vermögenswerten über die Zeit",
+      "title": "Vermögensangebot"
+    },
+    "assetValue": {
+      "description": "Gesamtwertaufschlüsselung nach Vermögensart",
+      "title": "Vermögenswertverteilung"
+    },
+    "assetLifecycle": {
+      "title": "Asset-Starts vs. Designs",
+      "description": "Verfolgen Sie, wie Asset-Starts mit neuen Erstellungen Schritt halten",
+      "createdLabel": "Designte Assets",
+      "launchedLabel": "Gestartete Assets",
+      "empty": {
+        "title": "Noch keine Lifecycle-Daten",
+        "description": "Sobald neue Assets designt werden, erscheinen hier Trends zu Design und Start"
+      }
+    },
+    "totalCollateral": {
+      "label": "Gesamtes Sicherheiten"
+    },
+    "totalSupply": {
+      "description": "Gesamtes Vermögensangebot der letzten {{days}} Tage",
+      "label": "Gesamtangebot",
+      "title": "Historie des Tokenangebots",
+      "noData": "Keine Daten verfügbar",
+      "noDataDescription": "Keine Gesamtangebotsdaten für die letzten {{days}} Tage gefunden"
+    },
+    "supplyChanges": {
+      "description": "Prägung und Vernichtung von Vermögenswerten der letzten {{days}} Tage",
+      "title": "Änderungen im Angebot",
+      "minted": "Prägend",
+      "burned": "Vernichtet",
+      "noData": "Keine Angebotsänderungsdaten verfügbar",
+      "noDataDescription": "Keine Mint- oder Burn-Aktivitäten in den letzten {{days}} Tagen gefunden"
+    },
+    "transactionHistory": {
+      "description": "Transaktionsvolumen über die Zeit",
+      "title": "Transaktionshistorie"
+    },
+    "userGrowth": {
+      "description": "Anzahl der Nutzer über die Zeit",
+      "title": "Nutzerwachstum"
+    },
+    "common": {
+      "noData": "Keine Daten verfügbar",
+      "noDataDescription": "Derzeit sind keine Daten für dieses Diagramm verfügbar"
+    },
+    "totalVolume": {
+      "description": "Gesamttransaktionsvolumen der letzten {{days}} Tage",
+      "label": "Gesamtvolumen",
+      "title": "Transaktionsvolumen"
+    },
+    "walletDistribution": {
+      "title": "Verteilung der Wallets",
+      "description": "Anzahl der Inhaber im Vergleich zu den gehaltenen Beträgen",
+      "holders": "Anzahl der Wallets"
+    },
+    "bondStatus": {
+      "title": "Anleihestatus",
+      "notBond": "Dieser Vermögenswert ist keine Anleihe",
+      "notAvailable": "Anleihestatus nicht verfügbar",
+      "completed": "Abgeschlossen",
+      "remaining": "Verbleibend",
+      "issuing": {
+        "title": "Anleiheemission",
+        "description": "{{percentage}}% der Anleihen wurden ausgegeben",
+        "label": "Ausgabe"
+      },
+      "active": {
+        "title": "Einlösungsdeckung",
+        "description": "{{percentage}}% der Nennwertvermögenswerte verfügbar",
+        "label": "Aktiv"
+      },
+      "matured": {
+        "title": "Anleiheeinlösung",
+        "description": "{{percentage}}% der Anleihen wurden eingelöst",
+        "label": "Fällig"
+      }
+    },
+    "collateralRatio": {
+      "title": "Sicherheitenquote",
+      "description": "Aufschlüsselung der verfügbaren vs. verwendeten Sicherheiten",
+      "available": "Verfügbare Sicherheiten",
+      "used": "Verwendete Sicherheiten",
+      "ratio": "Besicherung: {{ratio}}%"
+    },
+    "portfolioValue": {
+      "title": "Ihr Portfoliowert",
+      "description": "Sehen Sie, wie sich Ihr Portfoliowert im Laufe der Zeit verändert hat",
+      "label": "Wert",
+      "empty": {
+        "title": "Noch keine Daten verfügbar",
+        "description": "Beginnen Sie mit dem Investieren, um Ihre Portfolio-Performance zu verfolgen"
+      }
+    }
+  },
+  "title": "Statistiken",
+  "widgets": {
+    "assets": {
+      "empty": "Noch keine Vermögenswerte",
+      "title": "Gesamtvermögen"
+    },
+    "pendingLaunches": {
+      "description": "Erstellt {{created}}, gestartet {{launched}}",
+      "title": "Ausstehende Starts"
+    },
+    "common": {
+      "error": "Fehler beim Laden der Daten",
+      "loading": "Laden...",
+      "retry": "Erneut versuchen"
+    },
+    "transactions": {
+      "description": "{{count}} Transaktionen in den letzten {{days}} Tagen",
+      "title": "Gesamttransaktionen"
+    },
+    "users": {
+      "description": "{{count}} aktive Nutzer in den letzten {{days}} Tagen",
+      "title": "Aktive Nutzer"
+    },
+    "value": {
+      "description": "Kombinierter Wert aller Vermögenswerte",
+      "title": "Gesamtwert"
+    }
+  }
+}

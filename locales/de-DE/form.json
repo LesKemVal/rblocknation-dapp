@@ -1,0 +1,29 @@
+{
+  "letters-only": "Es sind nur Buchstaben erlaubt",
+  "noCountryFound": "Kein Land gefunden.",
+  "valid-email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+  "address": {
+    "selectPlaceholder": "Adresse wählen",
+    "searchPlaceholder": "Adressen suchen",
+    "loading": "Laden",
+    "noResults": "Keine passenden Adressen gefunden",
+    "recent": "Kürzlich",
+    "searchResults": "Ergebnisse",
+    "recentAddresses": "Kürzlich",
+    "searchInstead": "Stattdessen suchen",
+    "enterManually": "Manuell eingeben",
+    "noAddressesCreated": "Noch keine Adressen erstellt",
+    "allAddresses": "Alle",
+    "addAddress": "Adresse hinzufügen"
+  },
+  "buttons": {
+    "back": "Zurück",
+    "cancel": "Abbrechen",
+    "disable": "Deaktivieren",
+    "enable": "Aktivieren",
+    "next": "Weiter",
+    "submit": "Einreichen",
+    "leave": "Verlassen",
+    "save": "Speichern"
+  }
+}

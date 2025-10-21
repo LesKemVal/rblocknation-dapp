@@ -1,0 +1,54 @@
+{
+  "whichAssetClass": "どの資産クラスを設計したいですか？",
+  "assetClassDifferences": "各資産クラスは異なるリスク・リターンプロファイルを提供します。",
+  "includes": "含む",
+  "categories": {
+    "cashEquivalent": {
+      "description": "すぐに既知の金額の現金に変換できる高流動性の投資。",
+      "icon": "ウォレット",
+      "name": "現金等価物"
+    },
+    "fixedIncome": {
+      "description": "定期的な固定利息の支払いと満期時の元本返還の形でリターンを提供する資産。",
+      "icon": "上昇中",
+      "name": "固定収入"
+    },
+    "flexibleIncome": {
+      "description": "市場の状況や基礎的なパフォーマンスに基づいて変動するリターンを生み出す資産。",
+      "icon": "活動",
+      "name": "柔軟な収入"
+    }
+  },
+  "types": {
+    "bond": {
+      "name": "債券",
+      "namePlural": "特定の期間にわたって固定利息を支払う債務証券。",
+      "description": "固定収入",
+      "category": "預金"
+    },
+    "deposit": {
+      "name": "固定期間中に利息を得る時間制約のある預金。",
+      "namePlural": "現金等価物",
+      "description": "株式",
+      "category": "資産と収益に対する権利を表す所有権の株。"
+    },
+    "equity": {
+      "name": "柔軟な収入",
+      "namePlural": "ファンド",
+      "description": "複数の投資家から資本を集約するプール投資ビークル。",
+      "category": "柔軟な収入"
+    },
+    "fund": {
+      "name": "ステーブルコイン",
+      "namePlural": "基準資産に対して安定した価値を維持するように設計されたデジタル通貨。",
+      "description": "現金等価物",
+      "category": "フレキシブルインカム"
+    },
+    "stablecoin": {
+      "name": "ステーブルコイン",
+      "namePlural": "ステーブルコイン",
+      "description": "参照資産に対して安定した価値を維持するように設計されたデジタル通貨。",
+      "category": "現金同等物"
+    }
+  }
+}

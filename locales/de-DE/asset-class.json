@@ -1,0 +1,54 @@
+{
+  "whichAssetClass": "Welche Anlageklasse möchten Sie gestalten?",
+  "assetClassDifferences": "Jede Anlageklasse bietet ein unterschiedliches Risiko-Rendite-Profil.",
+  "includes": "Enthält",
+  "categories": {
+    "cashEquivalent": {
+      "description": "Hochliquide Investitionen, die leicht in bekannte Geldbeträge umgewandelt werden können.",
+      "icon": "Brieftasche",
+      "name": "Bargeldäquivalent"
+    },
+    "fixedIncome": {
+      "description": "Vermögenswerte, die Erträge in Form von regelmäßigen, festen Zinszahlungen und der Rückzahlung des Kapitals bei Fälligkeit bieten.",
+      "icon": "Steigend",
+      "name": "Festverzinslich"
+    },
+    "flexibleIncome": {
+      "description": "Vermögenswerte, die variable Erträge basierend auf Marktbedingungen und zugrunde liegender Leistung generieren.",
+      "icon": "Aktivität",
+      "name": "Flexibles Einkommen"
+    }
+  },
+  "types": {
+    "bond": {
+      "name": "Anleihe",
+      "namePlural": "Anleihen",
+      "description": "Schuldverschreibungen, die über einen bestimmten Zeitraum feste Zinsen zahlen.",
+      "category": "festverzinslich"
+    },
+    "deposit": {
+      "name": "Einlage",
+      "namePlural": "Einlagen",
+      "description": "Zeitlich gebundene Einlagen, die über einen festen Zeitraum Zinsen erwirtschaften.",
+      "category": "bargeldäquivalent"
+    },
+    "equity": {
+      "name": "Eigenkapital",
+      "namePlural": "Aktien",
+      "description": "Eigentumsanteile, die einen Anspruch auf Vermögenswerte und Erträge darstellen.",
+      "category": "flexiblesEinkommen"
+    },
+    "fund": {
+      "name": "Fonds",
+      "namePlural": "Fonds",
+      "description": "Gemeinschaftliche Anlagevehikel, die Kapital von mehreren Investoren bündeln.",
+      "category": "flexiblesEinkommen"
+    },
+    "stablecoin": {
+      "name": "Stablecoin",
+      "namePlural": "Stablecoins",
+      "description": "Digitale Währungen, die darauf ausgelegt sind, einen stabilen Wert im Verhältnis zu einem Referenzvermögen zu halten.",
+      "category": "bargeldäquivalent"
+    }
+  }
+}

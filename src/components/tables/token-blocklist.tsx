@@ -1,0 +1,154 @@
+import {
+  type ActionItem,
+  ActionsCell,
+} from "@/components/data-table/cells/actions-cell";
+import { DataTable } from "@/components/data-table/data-table";
+import "@/components/data-table/filters/types/table-extensions";
+import { withAutoFeatures } from "@/components/data-table/utils/auto-column";
+import { createStrictColumnHelper } from "@/components/data-table/utils/typed-column-helper";
+import { withErrorBoundary } from "@/components/error/component-error-boundary";
+import { BlocklistSheet } from "@/components/manage-dropdown/sheets/blocklist-sheet";
+import { Button } from "@/components/ui/button";
+import { orpc } from "@/orpc/orpc-client";
+import type { Token } from "@/orpc/routes/token/routes/token.read.schema";
+import type { EthereumAddress } from "@atk/zod/ethereum-address";
+import { getEthereumAddress } from "@atk/zod/ethereum-address";
+import { useQuery } from "@tanstack/react-query";
+import { useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
+
+type BlocklistRow = {
+  id: string;
+};
+
+const columnHelper = createStrictColumnHelper<BlocklistRow>();
+
+export const TokenBlocklistTable = withErrorBoundary(
+  function TokenBlocklistTable({ token }: { token: Token }) {
+    const { t } = useTranslation(["tokens", "common", "form"]);
+
+    // Fetch token holders to get frozen addresses
+    const { data: holdersData } = useQuery(
+      orpc.token.holders.queryOptions({
+        input: { tokenAddress: token.id },
+      })
+    );
+
+    const [openSheet, setOpenSheet] = useState(false);
+    const [sheetPreset, setSheetPreset] = useState<EthereumAddress | undefined>(
+      undefined
+    );
+    const [sheetMode, setSheetMode] = useState<"add" | "remove">("add");
+
+    const canManageBlocklist = Boolean(
+      token.userPermissions?.actions.freezeAddress
+    );
+
+    // Extract frozen addresses from holders data
+    const rows: BlocklistRow[] = useMemo(() => {
+      if (!holdersData?.token?.balances) return [];
+      return holdersData.token.balances
+        .filter((balance) => balance.isFrozen)
+        .map((balance) => ({ id: balance.account.id }));
+    }, [holdersData]);
+
+    const columns = useMemo(
+      () =>
+        withAutoFeatures([
+          columnHelper.accessor("id", {
+            header: t("tokens:blocklist.columns.address"),
+            meta: {
+              displayName: t("tokens:blocklist.columns.address"),
+              type: "address",
+            },
+          }),
+          columnHelper.display({
+            id: "actions",
+            header: "",
+            cell: ({ row }) => (
+              <RowActions
+                row={row.original}
+                canManage={canManageBlocklist}
+                onRemove={() => {
+                  setSheetMode("remove");
+                  setSheetPreset(getEthereumAddress(row.original.id));
+                  setOpenSheet(true);
+                }}
+              />
+            ),
+            meta: { type: "none", enableCsvExport: false },
+          }),
+        ]),
+      [t, canManageBlocklist]
+    );
+
+    return (
+      <>
+        <BlocklistSheet
+          open={openSheet}
+          onOpenChange={setOpenSheet}
+          asset={token}
+          presetAddress={sheetPreset}
+          defaultMode={sheetMode}
+          onCompleted={() => {
+            // Data will refresh automatically through query invalidation
+          }}
+        />
+        <DataTable
+          name="token-blocklist"
+          data={rows}
+          columns={columns}
+          initialSorting={[
+            {
+              id: "id",
+              desc: false,
+            },
+          ]}
+          advancedToolbar={{
+            enableGlobalSearch: true,
+            enableFilters: true,
+            enableExport: true,
+            enableViewOptions: true,
+            customActions: (
+              <div className="flex items-center gap-2">
+                <Button
+                  size="sm"
+                  onClick={() => {
+                    setSheetMode("add");
+                    setSheetPreset(undefined);
+                    setOpenSheet(true);
+                  }}
+                  disabled={!canManageBlocklist}
+                >
+                  {t("tokens:blocklist.addAddress")}
+                </Button>
+              </div>
+            ),
+            placeholder: t("tokens:blocklist.searchPlaceholder"),
+          }}
+        />
+      </>
+    );
+  }
+);
+
+function RowActions({
+  canManage,
+  onRemove,
+}: {
+  row: BlocklistRow;
+  canManage: boolean;
+  onRemove: () => void;
+}) {
+  const { t } = useTranslation(["tokens", "common"]);
+
+  const actions: ActionItem[] = [
+    {
+      label: t("tokens:blocklist.removeAddress"),
+      onClick: onRemove,
+      disabled: !canManage,
+    },
+  ];
+
+  return <ActionsCell actions={actions} />;
+}

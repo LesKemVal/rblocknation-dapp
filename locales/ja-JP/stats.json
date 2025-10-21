@@ -1,0 +1,135 @@
+{
+  "charts": {
+    "assetActivity": {
+      "title": "資産活動",
+      "description": "転送、発行、焼却イベントを追跡",
+      "transferEventsLabel": "転送",
+      "mintEventsLabel": "発行",
+      "burnEventsLabel": "焼却",
+      "empty": {
+        "title": "まだ活動がありません",
+        "description": "転送、発行、または焼却が発生すると、ここに資産活動が表示されます"
+      }
+    },
+    "assetSupply": {
+      "description": "時間経過に伴う資産の総供給量",
+      "title": "資産供給"
+    },
+    "assetValue": {
+      "description": "資産タイプ別の総価値の内訳",
+      "title": "資産価値配分"
+    },
+    "assetLifecycle": {
+      "title": "資産のローンチとデザインの比較",
+      "description": "資産のローンチが新しい作成に追いついているかを追跡",
+      "createdLabel": "デザインされた資産",
+      "launchedLabel": "ローンチされた資産",
+      "empty": {
+        "title": "ライフサイクルデータはまだありません",
+        "description": "新しく資産がデザインされると、ここにデザインとローンチの推移が表示されます"
+      }
+    },
+    "totalCollateral": {
+      "label": "総担保"
+    },
+    "totalSupply": {
+      "description": "過去{{days}}日間の総資産供給",
+      "label": "総供給",
+      "title": "トークン供給履歴"
+    },
+    "supplyChanges": {
+      "description": "過去{{days}}日間に発行および焼却された資産",
+      "title": "供給の変化",
+      "minted": "発行済み",
+      "burned": "焼却済み"
+    },
+    "transactionHistory": {
+      "description": "時間経過に伴う取引量",
+      "title": "取引履歴"
+    },
+    "userGrowth": {
+      "description": "時間経過に伴うユーザー数",
+      "title": "ユーザー成長"
+    },
+    "common": {
+      "noData": "データは利用できません",
+      "noDataDescription": "このチャートに表示するデータは現在ありません"
+    },
+    "totalVolume": {
+      "description": "過去{{days}}日間の総取引量",
+      "label": "総量",
+      "title": "取引量"
+    },
+    "walletDistribution": {
+      "title": "ウォレットの分布",
+      "description": "保有者の数と保有量の比較",
+      "holders": "ウォレットの数"
+    },
+    "bondStatus": {
+      "title": "債券の状態",
+      "notBond": "この資産は債券ではありません",
+      "notAvailable": "債券の状態は利用できません",
+      "completed": "完了",
+      "remaining": "残り",
+      "issuing": {
+        "title": "債券発行",
+        "description": "{{percentage}}%の債券が発行されました",
+        "label": "発行中"
+      },
+      "active": {
+        "title": "償還カバレッジ",
+        "description": "{{percentage}}%の額面資産が利用可能",
+        "label": "アクティブ"
+      },
+      "matured": {
+        "title": "債券償還",
+        "description": "{{percentage}}%の債券が償還されました",
+        "label": "満期"
+      }
+    },
+    "collateralRatio": {
+      "title": "担保比率",
+      "description": "利用可能な担保と使用中の担保の内訳",
+      "available": "利用可能な担保",
+      "used": "使用中の担保",
+      "ratio": "担保比率: {{ratio}}%"
+    },
+    "portfolioValue": {
+      "title": "ポートフォリオ価値",
+      "description": "ポートフォリオの価値が時間の経過とともにどのように変化したかを確認",
+      "label": "価値",
+      "empty": {
+        "title": "まだデータがありません",
+        "description": "最初の資産を受け取ると、ここにポートフォリオの価値が表示されます"
+      }
+    }
+  },
+  "title": "統計",
+  "widgets": {
+    "assets": {
+      "empty": "まだ資産はありません",
+      "title": "総資産"
+    },
+    "pendingLaunches": {
+      "description": "作成済み{{created}}件、ローンチ済み{{launched}}件",
+      "title": "ローンチ待ちトークン"
+    },
+    "common": {
+      "error": "データの読み込みエラー",
+      "loading": "読み込み中...",
+      "retry": "再試行"
+    },
+    "transactions": {
+      "description": "{{count}}件の取引が過去{{days}}日間に発生しました",
+      "title": "総取引数"
+    },
+    "users": {
+      "description": "{{count}}人のアクティブユーザーが過去{{days}}日間にいます",
+      "title": "アクティブユーザー"
+    },
+    "value": {
+      "description": "すべての資産の合計価値",
+      "title": "総価値"
+    }
+  }
+}

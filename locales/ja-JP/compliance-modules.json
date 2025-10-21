@@ -1,0 +1,46 @@
+{
+  "modules": {
+    "addressBlockList": {
+      "description": "特定のウォレットアドレスがあなたの資産にアクセスするのをブロックします。制裁対象または問題のあるアドレスが参加するのを防ぎます。",
+      "shortDescription": "特定のウォレットアドレスをブロック",
+      "title": "アドレスをブロック",
+      "addButtonLabel": "アドレスを追加"
+    },
+    "countryAllowList": {
+      "description": "特定の国からの投資家のみを許可します。地域のコンプライアンス要件を満たすのに役立ちます。",
+      "shortDescription": "特定の国のみを許可",
+      "title": "国の許可リスト"
+    },
+    "countryBlockList": {
+      "description": "特定の国または地域からの投資家をブロックします。制裁および規制の制限に準拠するのに役立ちます。",
+      "shortDescription": "特定の国をブロック",
+      "title": "国のブロックリスト"
+    },
+    "identityAllowList": {
+      "description": "承認されたリストからの確認済みの身元のみを許可します。独占的なオファリングやプライベートセールに適しています。",
+      "shortDescription": "承認された身元のみを許可",
+      "title": "身元の許可リスト"
+    },
+    "identityBlockList": {
+      "description": "特定の確認済みの身元があなたの資産にアクセスするのをブロックします。問題のある投資家を排除しながらコンプライアンスを維持します。",
+      "shortDescription": "特定の身元をブロック",
+      "title": "身元のブロックリスト"
+    },
+    "smartIdentityVerification": {
+      "description": "すべての投資家に対して身元確認を要求します。SMARTプロトコルを通じてKYCおよびAMLコンプライアンスを提供します。",
+      "shortDescription": "身元確認を要求",
+      "title": "SMART身元確認"
+    }
+  },
+  "title": "コンプライアンス",
+  "sections": {
+    "enabled": {
+      "title": "有効",
+      "description": "現在有効なモジュール"
+    },
+    "available": {
+      "title": "利用可能",
+      "description": "アクティブ化できるモジュール"
+    }
+  }
+}

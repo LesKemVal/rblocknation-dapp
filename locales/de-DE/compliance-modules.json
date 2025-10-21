@@ -1,0 +1,46 @@
+{
+  "modules": {
+    "addressBlockList": {
+      "description": "Blockieren Sie bestimmte Wallet-Adressen, um auf Ihr Vermögen zuzugreifen. Verhindert, dass sanktionierte oder problematische Adressen teilnehmen.",
+      "shortDescription": "Blockieren Sie bestimmte Wallet-Adressen",
+      "title": "Adressen blockieren",
+      "addButtonLabel": "Adresse hinzufügen"
+    },
+    "countryAllowList": {
+      "description": "Erlauben Sie nur Investoren aus bestimmten Ländern. Hilft, regionale Compliance-Anforderungen zu erfüllen.",
+      "shortDescription": "Nur bestimmte Länder erlauben",
+      "title": "Länder-Whitelist"
+    },
+    "countryBlockList": {
+      "description": "Blockieren Sie Investoren aus bestimmten Ländern oder Regionen. Hilft, Sanktionen und regulatorische Einschränkungen einzuhalten.",
+      "shortDescription": "Bestimmte Länder blockieren",
+      "title": "Länder-Blacklist"
+    },
+    "identityAllowList": {
+      "description": "Erlauben Sie nur verifizierte Identitäten aus Ihrer genehmigten Liste. Funktioniert gut für exklusive Angebote und private Verkäufe.",
+      "shortDescription": "Nur genehmigte Identitäten erlauben",
+      "title": "Identitäts-Whitelist"
+    },
+    "identityBlockList": {
+      "description": "Blockieren Sie bestimmte verifizierte Identitäten, um auf Ihr Vermögen zuzugreifen. Entfernen Sie problematische Investoren und bleiben Sie compliant.",
+      "shortDescription": "Bestimmte Identitäten blockieren",
+      "title": "Identitäts-Blacklist"
+    },
+    "smartIdentityVerification": {
+      "description": "Erfordern Sie eine Identitätsverifizierung für alle Investoren. Bietet KYC- und AML-Compliance durch das SMART-Protokoll.",
+      "shortDescription": "Identitätsverifizierung erforderlich",
+      "title": "SMART-Identitätsverifizierung"
+    }
+  },
+  "title": "Compliance",
+  "sections": {
+    "enabled": {
+      "title": "Aktiviert",
+      "description": "Derzeit aktivierte Module"
+    },
+    "available": {
+      "title": "Verfügbar",
+      "description": "Module, die Sie aktivieren können"
+    }
+  }
+}

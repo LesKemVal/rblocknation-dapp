@@ -1,0 +1,49 @@
+{
+  "asset": "Asset",
+  "actions": "Actions",
+  "assetClasses": "Asset classes",
+  "assetManagement": "Asset management",
+  "cashEquivalent": "Cash equivalent",
+  "fixedIncome": "Fixed income",
+  "flexibleIncome": "Flexible income",
+  "home": "Dashboard",
+  "myAssets": "My Assets",
+  "statistics": "Statistics",
+  "addons": "Addons",
+  "assetDesigner": "Asset designer",
+  "addonDesigner": "Addon designer",
+  "addonCategories": {
+    "distribution": "Distribution",
+    "exchange": "Exchange",
+    "custody": "Custody",
+    "income": "Income"
+  },
+  "administration": "Administration",
+  "platformSettings": "Platform Settings",
+  "userManagement": "User Management",
+  "identityManagement": "Identity Management",
+  "settings": {
+    "assetTypes": {
+      "title": "Asset Types",
+      "description": "Configure and enable different types of assets available on the platform. Once enabled, asset types cannot be disabled.",
+      "allEnabled": "All available asset types have been enabled.",
+      "enabledTitle": "Enabled Asset Types",
+      "enabledDescription": "These asset types are currently active and available for use on the platform.",
+      "enable": "Enable",
+      "enabled": "Enabled",
+      "confirmEnableTitle": "Enable {{assetType}}?",
+      "confirmEnableDescription": "This action cannot be undone. Once enabled, this asset type will be permanently available on the platform."
+    },
+    "compliance": "Compliance",
+    "addons": "Addons",
+    "claimTopicsIssuers": "Claim Topics & Issuers",
+    "permissions": {
+      "title": "Platform admins",
+      "description": "Manage platform admins roles for the Asset Tokenization Kit",
+      "adminRequired": {
+        "title": "Admin Access Required",
+        "description": "You need administrator privileges to manage roles. Please contact your system administrator for access."
+      }
+    }
+  }
+}

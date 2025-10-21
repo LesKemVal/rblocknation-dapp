@@ -1,0 +1,206 @@
+{
+  "compliance": {
+    "available": {
+      "description": "You can enable any of the following compliance modules to control who can access your asset.",
+      "title": "Available Modules"
+    },
+    "configured": {
+      "description": "Compliance modules that have been enabled for your asset.",
+      "title": "Enabled Modules"
+    },
+    "description": "Enable and configure compliance modules to control who can access your asset",
+    "title": "Compliance Modules"
+  },
+  "form": {
+    "actions": {
+      "create": "Create {{type}}",
+      "creating": "Creating..."
+    },
+    "buttons": {
+      "back": "Back",
+      "cancel": "Cancel",
+      "disable": "Disable",
+      "enable": "Enable",
+      "next": "Next",
+      "submit": "Submit",
+      "leave": "Leave"
+    },
+    "description": "Configure your {{type}} by providing the basic information below.",
+    "errors": {
+      "denominationAssetFetch": "We can't load this token. Try selecting a different one or wait a moment.",
+      "maturityDateTooEarly": "Maturity date must be after {{minDateTime}}"
+    },
+    "fields": {
+      "basePrice": {
+        "description": "The base price of the {{type}}",
+        "label": "Base price",
+        "placeholder": "e.g., 1000 USD"
+      },
+      "cap": {
+        "description": "The maximum number of {{type}} that can be issued",
+        "label": "Maximum limit",
+        "placeholder": "e.g., 1000000"
+      },
+      "category": {
+        "description": "The category of the {{type}}",
+        "label": "Category"
+      },
+      "class": {
+        "description": "The class of the {{type}}",
+        "label": "Class"
+      },
+      "countryCode": {
+        "description": "Choose where your {{type}} will be registered",
+        "label": "Country"
+      },
+      "decimals": {
+        "description": "Number of decimal places for the {{type}} (0-18, default is 18). This is used to determine the precision.",
+        "label": "Decimals",
+        "placeholder": "18"
+      },
+      "faceValue": {
+        "description": "The face value of each {{type}}",
+        "label": "Face value",
+        "placeholder": "e.g., 1000"
+      },
+      "isin": {
+        "description": "The ISIN of the {{type}}. This is an optional unique identifier for the {{type}} in the financial system.",
+        "label": "ISIN (Optional)",
+        "placeholder": "e.g., US0378331005"
+      },
+      "managementFeeBps": {
+        "description": "Management fee in basis points (100 BPS = 1%)",
+        "label": "Management fee (BPS)",
+        "placeholder": "e.g., 100",
+        "inPercentage": "Percentage: "
+      },
+      "maturityDate": {
+        "description": "The maturity date of the {{type}}",
+        "label": "Maturity date",
+        "placeholder": "Select date"
+      },
+      "name": {
+        "description": "The name of the {{type}}. This is used to identify the {{type}} in the UI and cannot be changed after creation.",
+        "label": "Name",
+        "placeholder": "e.g., Government {{type}} Series A"
+      },
+      "symbol": {
+        "description": "A short symbol for the {{type}} (usually 3-5 characters). It can be upto 10 characters long.",
+        "label": "Symbol",
+        "placeholder": "e.g., GBSA"
+      },
+      "type": {
+        "description": "Choose the type of digital asset you want to create. Only asset types with deployed factories are available.",
+        "label": "Asset type"
+      },
+      "denominationAsset": {
+        "description": "The address of the denomination asset",
+        "label": "Denomination asset",
+        "placeholder": "e.g., 0x..."
+      },
+      "assetClass": {
+        "description": "The class of the {{type}}",
+        "label": "Asset class"
+      }
+    },
+    "title": "Deploy {{type}}"
+  },
+  "leave-confirmation": {
+    "title": "Leave asset designer?",
+    "description": "Your progress will be lost if you leave now. Any information you've entered won't be saved.",
+    "stay": "Stay",
+    "leave": "Leave"
+  },
+  "messages": {
+    "comingSoon": "Coming soon!",
+    "created": "{{type}} successfully created.",
+    "creating": "Creating the {{type}}...",
+    "creation-failed": "Failed to create the {{type}}.",
+    "error-toast": "Failed to create {{type}}",
+    "loading": "Loading available asset types...",
+    "loading-description": "Please wait while we fetch the available token factories.",
+    "no-asset-types": "No Asset Types Available",
+    "no-asset-types-description": "No token factories have been deployed yet. Please deploy token factories first before creating tokens.",
+    "success-toast": "{{type}} created successfully!"
+  },
+  "streaming-messages": {
+    "creation-failed": "Failed to create the {{type}}.",
+    "creation-success": "{{type}} successfully created.",
+    "default-error": "Failed to create {{type}}.",
+    "initial-loading": "Preparing to create {{type}}...",
+    "no-result-error": "No transaction hash received from {{type}} creation."
+  },
+  "validation": {
+    "type-required": "Please select an asset type"
+  },
+  "verification": {
+    "confirm-description": "Please verify your identity to create your digital asset.",
+    "confirm-title": "Confirm asset creation"
+  },
+  "wizard": {
+    "description": "We'll guide you through each step to create your tokenized asset with built-in regulatory compliance and investor protection.",
+    "groups": {
+      "chooseAssetType": {
+        "title": "Choose asset type",
+        "description": "Select the asset class and type you want to tokenize"
+      },
+      "configureAssetDetails": {
+        "title": "Configure details",
+        "description": "Define basic properties and settings for your asset"
+      },
+      "compliance": {
+        "title": "Compliance",
+        "description": "Set up regulatory modules to meet legal requirements"
+      },
+      "summary": {
+        "title": "Summary",
+        "description": "Review your asset configuration before deployment"
+      }
+    },
+    "steps": {
+      "assetClass": {
+        "description": "Select the asset class you want to create",
+        "title": "Select asset class"
+      },
+      "assetType": {
+        "description": "Select the type of real-world asset you want to tokenize on the blockchain",
+        "title": "Choose your asset type"
+      },
+      "assetBasics": {
+        "description": "Specify the general information for this asset",
+        "title": "General info"
+      },
+      "assetSpecificConfig": {
+        "description": "Set the parameters specific to your {{type}}",
+        "title": "Instrument specific details"
+      },
+      "complianceModules": {
+        "description": "Set up compliance modules to ensure your asset meets legal requirements",
+        "title": "Configure compliance"
+      },
+      "summary": {
+        "description": "Confirm and deploy your compliant digital asset to the blockchain",
+        "title": "Review & deploy",
+        "generalInfo": {
+          "title": "General info",
+          "description": "General information about your {{type}}"
+        },
+        "instrumentSpecificDetails": {
+          "title": "Instrument specific details",
+          "description": "{{type}} specific details"
+        },
+        "complianceModules": {
+          "title": "Compliance modules",
+          "description": "Compliance modules that have been enabled for your {{type}}"
+        },
+        "availability": {
+          "checking": "Checking",
+          "availableDescription": "Your asset name, symbol, and decimals are available.",
+          "unavailableDescription": "An asset with this name, symbol, and decimals already exists. Change any one of these to continue.",
+          "errorDescription": "Unable to verify availability. Check your asset details and try again."
+        }
+      }
+    },
+    "title": "Design your asset"
+  }
+}

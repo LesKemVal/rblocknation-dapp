@@ -1,0 +1,79 @@
+import { assetDesignerFormOptions } from "@/components/asset-designer/asset-designer-wizard/asset-designer-form";
+import { ComplianceModules } from "@/components/compliance/compliance-modules";
+import { FormStepLayout } from "@/components/form/multi-step/form-step-layout";
+import { Button } from "@/components/ui/button";
+import { withForm } from "@/hooks/use-app-form";
+import { noop } from "@/lib/utils/noop";
+import type { ComplianceModulesList } from "@/orpc/routes/system/compliance-module/routes/compliance-module.list.schema";
+import type { ComplianceModulePairInput } from "@atk/zod/compliance";
+import { useStore } from "@tanstack/react-store";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
+const empty: never[] = [];
+
+export const SelectComplianceModules = withForm({
+  ...assetDesignerFormOptions,
+  props: {
+    onStepSubmit: noop,
+    onBack: noop,
+    complianceModules: [] as ComplianceModulesList,
+  },
+  render: function Render({ form, onStepSubmit, onBack, complianceModules }) {
+    const { t } = useTranslation("asset-designer");
+    const [showFormStepActions, setShowFormStepActions] = useState(true);
+
+    const initialModulePairs = useStore(
+      form.store,
+      (state) => state.values.initialModulePairs
+    );
+
+    const addModulePair = (modulePair: ComplianceModulePairInput) => {
+      const modulePairsWithoutType = initialModulePairs?.filter(
+        (pair) => pair.typeId !== modulePair.typeId
+      );
+      form.setFieldValue("initialModulePairs", () => {
+        return [...(modulePairsWithoutType ?? []), modulePair];
+      });
+    };
+
+    const removeModulePair = (modulePair: ComplianceModulePairInput) => {
+      form.setFieldValue("initialModulePairs", () => {
+        return initialModulePairs?.filter(
+          (pair) => pair.typeId !== modulePair.typeId
+        );
+      });
+    };
+
+    return (
+      <FormStepLayout
+        title={t("compliance.title")}
+        description={t("compliance.description")}
+        actions={
+          showFormStepActions ? (
+            <>
+              <Button variant="outline" onClick={onBack}>
+                {t("form.buttons.back")}
+              </Button>
+              <form.StepSubmitButton
+                label={t("form.buttons.next")}
+                onStepSubmit={onStepSubmit}
+                validate={empty}
+              />
+            </>
+          ) : undefined
+        }
+      >
+        <ComplianceModules
+          allModules={complianceModules}
+          enabledModules={initialModulePairs}
+          onEnable={addModulePair}
+          onDisable={removeModulePair}
+          onActiveModuleChange={(activeModule) => {
+            setShowFormStepActions(!activeModule);
+          }}
+        />
+      </FormStepLayout>
+    );
+  },
+});
