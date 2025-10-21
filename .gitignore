@@ -44,3 +44,5 @@ lib/settlemint
 
 # Dev reset marker
 .dev-reset-marker
+# Local Netlify folder
+.netlify

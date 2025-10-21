@@ -1,0 +1,42 @@
+
+/* === Responsive Layout & Mobile Adjustments === */
+
+@media (max-width: 1024px) {
+main {
+padding: 20px 16px;
+}
+}
+
+@media (max-width: 768px) {
+header nav {
+display: none; /* hide full nav */
+}
+header .mobile-menu {
+display: block;
+}
+.card-grid {
+grid-template-columns: 1fr;
+}
+h1 {
+font-size: 2rem;
+}
+footer {
+font-size: 0.9rem;
+}
+}
+
+@media (max-width: 480px) {
+h1 {
+font-size: 1.8rem;
+}
+h2 {
+font-size: 1.4rem;
+}
+p {
+font-size: 0.95rem;
+}
+a, button {
+font-size: 0.9rem;
+padding: 10px 14px;
+}
+}

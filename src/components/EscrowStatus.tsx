@@ -6,7 +6,7 @@ export default function EscrowStatus() {
 
   useEffect(() => {
     fetchNC({ path: "/v1/escrow/balance" })
-      .then((data) => setEscrow(\`$\${data.balance || 0}\`))
+      .then((data) => setEscrow(`$${data.balance || 0}`))
       .catch(() => setEscrow("Unavailable"))
   }, [])
 
